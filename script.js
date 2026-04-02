@@ -9,8 +9,7 @@ async function getData (CityName){
 
     //call api ( fetch is return promise)......
    
-   const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=752fec28fc6746d6834180243260104&q=${CityName}&aqi=yes
-`);
+   const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=752fec28fc6746d6834180243260104&q=${CityName}&aqi=yes`);
 return await promise.json()
 }
  button.addEventListener("click", async () => {
